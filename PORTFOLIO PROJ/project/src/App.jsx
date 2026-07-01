@@ -108,7 +108,7 @@ const PROJECTS = [
 const EDUCATION = [
   {
     title: "Higher Secondary Education (Class XII)",
-    place: "Science Stream — Physics, Chemistry, Mathematics",
+    place: "Science Stream — Physics, Chemistry, Mathematics, Biology",
     time: "Completed",
     points: ["Built foundation in mathematics and computing", "Introduced to programming fundamentals"],
   },
@@ -702,10 +702,10 @@ function Hero({ heroRef, blobRef, typed, scrollTo, ripple }) {
 
               <div className="flex items-center gap-3 pt-2">
                 {[
-                  { icon: Linkedin, href: "#", label: "LinkedIn" },
-                  { icon: Github, href: "#", label: "GitHub" },
+                  { icon: Linkedin, href: "https://www.linkedin.com/in/sujeet-paswan-586a69211", label: "LinkedIn" },
+                  { icon: Github, href: "https://github.com/solocoder-01", label: "GitHub" },
                   { icon: Mail, href: "#", label: "Email" },
-                  { icon: Instagram, href: "#", label: "Instagram" },
+                  { icon: Instagram, href: "https://www.instagram.com/solocoder_01?igsh=ZmN5bDZiaGZ2bmx6", label: "Instagram" },
                 ].map(({ icon: Icon, href, label }) => (
                   <a
                     key={label}
