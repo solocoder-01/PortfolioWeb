@@ -33,76 +33,50 @@ const SKILL_GROUPS = [
     title: "Programming",
     icon: Code2,
     accent: "from-emerald-500 to-emerald-400",
-    items: ["C++", "Python", "JavaScript", "Java"],
+    items: ["C++", "Python"],
   },
   {
     title: "Web Development",
     icon: Server,
     accent: "from-green-500 to-emerald-400",
-    items: ["HTML", "CSS", "React", "Node.js", "Express"],
+    items: ["HTML", "CSS"],
   },
   {
     title: "Databases",
     icon: Database,
     accent: "from-emerald-400 to-emerald-500",
-    items: ["MySQL", "MongoDB"],
+    items: ["MySQL"],
   },
-  {
-    title: "Cloud & DevOps",
-    icon: Cloud,
-    accent: "from-emerald-500 to-green-500",
-    items: ["AWS", "Azure", "Docker", "Kubernetes", "Linux"],
-  },
+  
   {
     title: "Cybersecurity",
     icon: Shield,
     accent: "from-green-500 to-emerald-400",
-    items: ["Wireshark", "Nmap", "Burp Suite", "Metasploit", "SIEM", "IAM"],
+    items: ["Wireshark", "Nmap", "Burp Suite", "Metasploit"],
   },
   {
     title: "Tools & Networking",
     icon: GitBranch,
     accent: "from-emerald-400 to-green-500",
-    items: ["Git", "GitHub", "Networking"],
+    items: ["Git", "GitHub", "Networking","linux"],
   },
 ];
 
 const PROJECTS = [
-  {
-    title: "Cloud Security Dashboard",
-    desc: "A monitoring console that surfaces IAM misconfigurations, exposed storage, and anomalous login activity across cloud accounts in real time.",
-    stack: ["AWS", "Python", "React", "CloudWatch"],
-  },
+  
   {
     title: "Portfolio Website",
     desc: "This site — a performance-tuned personal portfolio with motion design, glassmorphism, and a fully responsive component system.",
     stack: ["Next.js", "TypeScript", "Tailwind", "Framer Motion"],
   },
-  {
-    title: "Spotify Clone",
-    desc: "A full-stack music streaming interface with playlist management, search, and playback state handled through a Node.js API layer.",
-    stack: ["React", "Node.js", "Express", "MongoDB"],
-  },
+ 
   {
     title: "Network Scanner",
     desc: "A CLI-based host and port discovery tool built for internal reconnaissance labs, with service fingerprinting and export to CSV.",
     stack: ["Python", "Nmap", "Scapy", "Sockets"],
   },
-  {
-    title: "Threat Detection System",
-    desc: "A lightweight anomaly-detection pipeline that correlates packet captures and log events to flag suspicious behavior patterns.",
-    stack: ["Python", "Machine Learning", "SIEM", "Wireshark"],
-  },
-  {
-    title: "Weather App",
-    desc: "A clean, geolocation-aware weather client with animated condition icons and a 5-day forecast view.",
-    stack: ["React", "OpenWeather API", "Tailwind"],
-  },
-  {
-    title: "Password Manager",
-    desc: "A self-hosted credential vault with AES-256 encryption at rest and a zero-knowledge master-password unlock flow.",
-    stack: ["Node.js", "Express", "MongoDB", "AES Encryption"],
-  },
+ 
+ 
 ];
 
 const EDUCATION = [
@@ -117,7 +91,7 @@ const EDUCATION = [
     place: "Current Semester in progress",
     time: "In Progress",
     points: [
-      "Relevant coursework: Data Structures, Computer Networks, Operating Systems, Cloud Computing, Cybersecurity Fundamentals",
+      "Relevant coursework: Data Structures, Computer Networks, Operating Systems, Database Management System, Cybersecurity Fundamentals",
       "Achievements: SOC Analyst & AI Security training completion, hands-on incident response capstone",
     ],
   },
@@ -138,13 +112,7 @@ const EXPERIENCE = [
     time: "Target Role",
     points: ["Actively applying to security-operations internships", "Focused on alert triage and log analysis workflows"],
   },
-  {
-    type: "Hackathon",
-    title: "Campus Hackathon Participant",
-    org: "College Tech Fest",
-    time: "Past Season",
-    points: ["Built a full-stack prototype under time constraints", "Collaborated across frontend, backend, and pitch"],
-  },
+  
   {
     type: "Workshop",
     title: "Cloud & Network Security Workshop",
@@ -152,22 +120,15 @@ const EXPERIENCE = [
     time: "Past Season",
     points: ["Covered Bluetooth attack vectors and network defense basics", "Hands-on labs with Wireshark and Nmap"],
   },
-  {
-    type: "Volunteer",
-    title: "Peer Mentor — Web Development Basics",
-    org: "College Coding Club",
-    time: "Ongoing",
-    points: ["Guided juniors through React fundamentals", "Ran doubt-clearing sessions ahead of project deadlines"],
-  },
+ 
 ];
 
 const CERTIFICATES = [
-  { title: "SOC Analyst & AI Security Training", issuer: "Guided Intensive Program", year: "2026" },
-  { title: "Google Cybersecurity Professional Certificate", issuer: "Coursera / Google", year: "—" },
-  { title: "AWS Certified Cloud Practitioner", issuer: "Amazon Web Services", year: "—" },
-  { title: "Network Security Fundamentals", issuer: "Community Workshop", year: "—" },
-  { title: "Full Stack Web Development", issuer: "Self-paced Program", year: "—" },
-  { title: "Python for Security Automation", issuer: "Self-paced Program", year: "—" },
+  { title: "Introduction to Ethical Hacking", issuer: "Great learning Academy", year: "2024" },
+  { title: "Advance Cybersecurity Theats and governace", issuer: "Great learning Academy", year: "2024" },
+  { title: "C++ Programming", issuer: "Great learning Academy", year: "2024" },
+  { title: "Network Security Fundamentals", issuer: "Learnvern Academy", year: "2024" },
+  
 ];
 
 /* --------------------------- UTIL HOOKS ---------------------------- */
@@ -662,7 +623,7 @@ function Hero({ heroRef, blobRef, typed, scrollTo, ripple }) {
               <span className="w-3 h-3 rounded-full bg-red-500/70" />
               <span className="w-3 h-3 rounded-full bg-yellow-500/70" />
               <span className="w-3 h-3 rounded-full bg-emerald-500/70" />
-              <span className="ml-2 font-mono text-[11px] text-slate-500">sujeet@security:~</span>
+              <span className="ml-2 font-mono text-[11px] text-slate-500">sujeetpaswan0144@gmail.com</span>
             </div>
 
             <div className="p-6 sm:p-8 flex flex-col gap-5 font-mono">
@@ -704,7 +665,7 @@ function Hero({ heroRef, blobRef, typed, scrollTo, ripple }) {
                 {[
                   { icon: Linkedin, href: "https://www.linkedin.com/in/sujeet-paswan-586a69211", label: "LinkedIn" },
                   { icon: Github, href: "https://github.com/solocoder-01", label: "GitHub" },
-                  { icon: Mail, href: "#", label: "Email" },
+                  { icon: Mail, href: "sujeetpaswan0144@gmail.com", label: "Email" },
                   { icon: Instagram, href: "https://www.instagram.com/solocoder_01?igsh=ZmN5bDZiaGZ2bmx6", label: "Instagram" },
                 ].map(({ icon: Icon, href, label }) => (
                   <a
@@ -1091,7 +1052,7 @@ function Contact({ formState, setFormState, submitForm, sent, ripple }) {
           <Reveal>
             <div className="flex flex-col gap-4">
               {[
-                { icon: Mail, label: "Email", value: "sujeet.paswan@example.com" },
+                { icon: Mail, label: "Email", value: "sujeetpaswan0144@example.com" },
                 { icon: Phone, label: "Phone", value: "+91 XXXXX XXXXX" },
                 { icon: MapPin, label: "Location", value: "India" },
               ].map((c) => (
