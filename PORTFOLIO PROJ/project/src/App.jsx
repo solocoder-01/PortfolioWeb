@@ -887,7 +887,7 @@ function Skills() {
 
 function Projects() {
   return (
-  /*  <section id="projects" className="relative py-28 px-6">
+    <section id="projects" className="relative py-28 px-6">
       <div className="max-w-6xl mx-auto">
         <SectionHeading eyebrow="Projects" title="Selected work" sub="A mix of security tooling and full-stack builds." />
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -900,6 +900,7 @@ function Projects() {
                     {p.title.split(" ").map((w) => w[0]).slice(0, 2).join("")}
                   </span>
                 </div>
+               /* 
                 <div className="p-6 flex flex-col flex-1">
                   <h3 className="font-display font-bold text-base text-white mb-2">{p.title}</h3>
                   <p className="text-slate-400 text-sm leading-relaxed mb-4 flex-1">{p.desc}</p>
@@ -910,13 +911,16 @@ function Projects() {
                       </span>
                     ))}
                   </div>
+                 */
                   <div className="flex gap-3 mt-auto">
-                    <a href="#" className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-300 hover:text-white transition-colors">
+                    <a href="https://portfolio-web-seven-ochre-80.vercel.app/" className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-300 hover:text-white transition-colors">
                       <Github size={14} /> GitHub
                     </a>
+                   /*
                     <a href="#" className="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-400 hover:text-emerald-300 transition-colors">
                       <ExternalLink size={14} /> Live Demo
                     </a>
+                    */
                   </div>
                 </div>
               </div>
@@ -925,7 +929,7 @@ function Projects() {
         </div>
       </div>
     </section> 
-    */
+    
   );
 }
 
