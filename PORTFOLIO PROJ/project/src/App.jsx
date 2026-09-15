@@ -884,7 +884,7 @@ function Skills() {
 }
 
 /* ------------------------------- PROJECTS -------------------------------- */
-/*
+
 function Projects() {
   return (
     <section id="projects" className="relative py-28 px-6">
@@ -932,7 +932,7 @@ function Projects() {
     
   );
 }
-*/
+
 /* ------------------------------- EXPERIENCE -------------------------------- */
 
 function Experience() {
